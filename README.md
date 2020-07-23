@@ -4,7 +4,9 @@
 Feeling  lonely 😜 when you cheers 👏 on your own 🤦‍🙅‍♀️? Invite the bot to your server using [this link!](https://discordapp.com/oauth2/authorize?client_id=735652353293811722&scope=bot&permissions=3136) 🙌😩
 
 Note 📝:
-If you are forking this project, add your bot's token to the [example env](.env.example), and replace `<INSERT_TOKEN>` with your bot's token which is found on the bot tab of the developer portal after you have created your own bot
+If you are forking this project, add your bot's token to [.env.example](.env.example), and replace `<INSERT_TOKEN>` with your bot's token which is found on the bot tab of the developer portal after you have created your own bot
+
+Then, rename `.env.example` to `.env`
 
 # Steps to starting your own Discord Bot 🚀
 ## Creating the bot 🧲
@@ -88,7 +90,7 @@ If you haven't already, install [Git](https://git-scm.com/) and [Heroku CLI](htt
 Create a file called `Procfile`, and add the following, replacing `index.js` with the file you want to run
 
 ```
-web: node index.js
+worker: node index.js
 ```
 
 This will tell Heroku how to run your application
@@ -103,4 +105,16 @@ git init
 ```
 heroku create
 ```
-This will create a new heroku app which you can push your code into with git
+This will create a new heroku app, and adds a new remote `heroku` which you can push your code into with git. 
+
+If you put your token inside the `.env` file,
+
+But before we push the code, we need to add the changes and commit them:
+```
+git add .
+git commit -m "Heroku Deploy!"
+```
+Now, we're finally ready deploy and push our code onto heroku
+
+
+To see the logs and debug any errors, run `heroku logs`
