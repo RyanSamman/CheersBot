@@ -107,14 +107,19 @@ heroku create
 ```
 This will create a new heroku app, and adds a new remote `heroku` which you can push your code into with git. 
 
-If you put your token inside the `.env` file,
+If you put your token inside the `.env` file, run the following command:
+```
+heroku config:set TOKEN="<ADD_TOKEN_HERE>"
+```
 
-But before we push the code, we need to add the changes and commit them:
+But before we push the code & deploy, we need to add the changes and commit them:
 ```
 git add .
 git commit -m "Heroku Deploy!"
 ```
-Now, we're finally ready deploy and push our code onto heroku
-
+Now, we're finally ready deploy and push our code onto heroku!
+```
+git push heroku master
+```
 
 To see the logs and debug any errors, run `heroku logs`
