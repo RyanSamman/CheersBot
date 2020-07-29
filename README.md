@@ -1,7 +1,7 @@
 # CheersBot 🍺
 🎉 Beep boop bop it's Cheers Bot! 🎉
 
-Feeling  lonely 😜 when you cheers 👏 on your own 🤦‍🙅‍♀️? Invite the bot to your server using [this link!](https://discordapp.com/oauth2/authorize?client_id=735652353293811722&scope=bot&permissions=3136) 🙌😩
+Feeling lonely when you cheers on your own? Invite the bot to your server using [this link!](https://discordapp.com/oauth2/authorize?client_id=735652353293811722&scope=bot&permissions=3136)
 
 Note 📝:
 If you are forking this project, add your bot's token to [.env.example](.env.example), and replace `<INSERT_TOKEN>` with your bot's token which is found on the bot tab of the developer portal after you have created your own bot
